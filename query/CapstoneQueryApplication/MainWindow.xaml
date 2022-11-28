@@ -1,0 +1,43 @@
+﻿<Window x:Class="CapstoneQueryApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CapstoneQueryApplication"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="Clobundance Database Query" Height="450" Width="800">
+    <Grid>
+        <TabControl Margin="5">
+            <TabItem Header="Inventory">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <ListBox Grid.RowSpan="2" x:Name="lstProductCategories" Margin="5" SelectionChanged="lstProductCategories_SelectionChanged"/>
+                    <DataGrid Margin="5" Grid.Column="1" x:Name="productData" IsReadOnly="True" MouseDoubleClick="productData_MouseDoubleClick" />
+
+                    <Button x:Name="btnAddProduct" Grid.Column="1" Content="Add Product" Grid.Row="1" Width="100" HorizontalAlignment="Left" Margin="5" Click="btnAddProduct_Click" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Users">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <DataGrid Margin="5" x:Name="userData" IsReadOnly="True" MouseDoubleClick="userData_MouseDoubleClick" />
+
+                    <Button x:Name="btnAddUser" Content="Add User" Grid.Row="1" Width="100" HorizontalAlignment="Left" Margin="5" Click='btnAddUser_Click' />
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
