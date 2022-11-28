@@ -123,6 +123,8 @@ namespace CapstoneQueryApplication
 
         private void lstProductCategories_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            btnAddProduct.IsEnabled = true;
+
             UpdateTable();
         }
 

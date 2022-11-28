@@ -24,7 +24,8 @@
                     <ListBox Grid.RowSpan="2" x:Name="lstProductCategories" Margin="5" SelectionChanged="lstProductCategories_SelectionChanged"/>
                     <DataGrid Margin="5" Grid.Column="1" x:Name="productData" IsReadOnly="True" MouseDoubleClick="productData_MouseDoubleClick" />
 
-                    <Button x:Name="btnAddProduct" Grid.Column="1" Content="Add Product" Grid.Row="1" Width="100" HorizontalAlignment="Left" Margin="5" Click="btnAddProduct_Click" />
+                    <Button x:Name="btnAddProduct" Grid.Column="1" Content="Add Product" Grid.Row="1" Width="100" HorizontalAlignment="Left" Margin="5" Click="btnAddProduct_Click"
+                            IsEnabled="False"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Users">
