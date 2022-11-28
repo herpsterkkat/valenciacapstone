@@ -1,0 +1,102 @@
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url(https://www.image-illustration.net/wp-content/uploads/2015/12/walking-flat-01-people-2d.jpg);
+    column-gap: 30px;
+}
+
+header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color:black;
+
+}
+
+.form {
+    background-color:rgb(64, 126, 184);
+    width: 100%;
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    position: absolute;
+
+}
+
+.form.signup {
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.forms.show-signup .form.signup {
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.forms.show-signup .form.login {
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+form {
+    margin-top: 20px;
+
+}
+
+form .email {
+    height: 45px;
+    width: 100px;
+
+}
+
+.email input {
+    height: 50%;
+    width: 300%;
+    
+
+}
+
+form .password {
+    height: 45px;
+    width: 100px;
+
+}
+
+.password input {
+    height: 50%;
+    width: 300px;
+
+}
+
+button {
+    height: 100%;
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+form a {
+    text-decoration: none;
+    color:rgb(70, 54, 20);
+
+}
+form a:hover {
+    text-decoration: underline;
+
+}
+
+
+
+
+
+
+
