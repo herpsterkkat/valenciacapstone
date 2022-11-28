@@ -1,0 +1,89 @@
+body {
+  background-color:#ffffff;
+  font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+a:link{
+	color: blue;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:visited{
+  color: blue;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.content {
+  max-width: 1100px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+
+h1{
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
+	text-align: center;
+}
+
+.itemtext{
+  color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+.pricetext{
+  color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+  transform: translateY(-10px);
+}
+
+.landingimage img{
+  width: 400px;
+}
+
+.homecolumn {
+  display: inline-block;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(106px);
+}
+
+.categoryrow {
+  display: inline-block;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(25px);
+}
+
+.itemfontplacement{
+  transform: translate(350px, -400px);
+}
+
+.itemimageplacement{
+  transform: translate(0px, 7px);
+}
+
+.itempagetitle{
+  color: black;
+  font-family: "Roboto";
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
